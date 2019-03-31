@@ -7,21 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754BFA04224E590D00252FB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754BFA03224E590D00252FB2 /* GoogleService-Info.plist */; };
 		758B040C2244CD1400EBDD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B040B2244CD1400EBDD8C /* AppDelegate.swift */; };
-		758B040E2244CD1400EBDD8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B040D2244CD1400EBDD8C /* ViewController.swift */; };
 		758B04112244CD1400EBDD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758B040F2244CD1400EBDD8C /* Main.storyboard */; };
 		758B04132244CD1600EBDD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758B04122244CD1600EBDD8C /* Assets.xcassets */; };
 		758B04162244CD1600EBDD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758B04142244CD1600EBDD8C /* LaunchScreen.storyboard */; };
+		75ABF552225065B600FE951B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABF551225065B600FE951B /* CameraViewController.swift */; };
+		75AEC066224DF27000D49949 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC065224DF27000D49949 /* GroupViewController.swift */; };
+		75AEC069224DF29700D49949 /* GroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC067224DF29700D49949 /* GroupViewCell.swift */; };
+		75AEC06A224DF29700D49949 /* GroupViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75AEC068224DF29700D49949 /* GroupViewCell.xib */; };
+		75AEC06D224DF44C00D49949 /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC06C224DF44C00D49949 /* VoteViewController.swift */; };
+		75AEC070224DF46800D49949 /* VoteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC06E224DF46800D49949 /* VoteViewCell.swift */; };
+		75AEC071224DF46800D49949 /* VoteViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75AEC06F224DF46800D49949 /* VoteViewCell.xib */; };
+		75B0BF04224F2F780007AA54 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0BF03224F2F780007AA54 /* AdminViewController.swift */; };
+		75B0BF07224F2F890007AA54 /* AdminViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0BF05224F2F890007AA54 /* AdminViewCell.swift */; };
+		75B0BF08224F2F890007AA54 /* AdminViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B0BF06224F2F890007AA54 /* AdminViewCell.xib */; };
+		75B0BF0B224F9D260007AA54 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0BF0A224F9D260007AA54 /* RoomViewController.swift */; };
+		75B0BF0E224F9D370007AA54 /* RoomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0BF0C224F9D370007AA54 /* RoomViewCell.swift */; };
+		75B0BF0F224F9D370007AA54 /* RoomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B0BF0D224F9D370007AA54 /* RoomViewCell.xib */; };
+		75B0BF12224FAC330007AA54 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0BF11224FAC330007AA54 /* ResultViewController.swift */; };
+		75B0BF15224FAC4D0007AA54 /* ResultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0BF13224FAC4D0007AA54 /* ResultViewCell.swift */; };
+		75B0BF16224FAC4D0007AA54 /* ResultViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B0BF14224FAC4D0007AA54 /* ResultViewCell.xib */; };
+		F9B350508ED981B562E96816 /* Pods_QRCodeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E2CC1D33985C86930A382 /* Pods_QRCodeSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C8DDEA870A4D31BDE779F1B /* Pods-QRCodeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRCodeSample/Pods-QRCodeSample.release.xcconfig"; sourceTree = "<group>"; };
+		3D9DBAB556F5F477F2EAE98D /* Pods-QRCodeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRCodeSample/Pods-QRCodeSample.debug.xcconfig"; sourceTree = "<group>"; };
+		754BFA03224E590D00252FB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/Download/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		758B04082244CD1400EBDD8C /* QRCodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758B040B2244CD1400EBDD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		758B040D2244CD1400EBDD8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		758B04102244CD1400EBDD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		758B04122244CD1600EBDD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		758B04152244CD1600EBDD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		758B04172244CD1600EBDD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75ABF551225065B600FE951B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		75AEC065224DF27000D49949 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		75AEC067224DF29700D49949 /* GroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewCell.swift; sourceTree = "<group>"; };
+		75AEC068224DF29700D49949 /* GroupViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupViewCell.xib; sourceTree = "<group>"; };
+		75AEC06C224DF44C00D49949 /* VoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		75AEC06E224DF46800D49949 /* VoteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteViewCell.swift; sourceTree = "<group>"; };
+		75AEC06F224DF46800D49949 /* VoteViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoteViewCell.xib; sourceTree = "<group>"; };
+		75B0BF03224F2F780007AA54 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		75B0BF05224F2F890007AA54 /* AdminViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewCell.swift; sourceTree = "<group>"; };
+		75B0BF06224F2F890007AA54 /* AdminViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminViewCell.xib; sourceTree = "<group>"; };
+		75B0BF0A224F9D260007AA54 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		75B0BF0C224F9D370007AA54 /* RoomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewCell.swift; sourceTree = "<group>"; };
+		75B0BF0D224F9D370007AA54 /* RoomViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomViewCell.xib; sourceTree = "<group>"; };
+		75B0BF11224FAC330007AA54 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		75B0BF13224FAC4D0007AA54 /* ResultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewCell.swift; sourceTree = "<group>"; };
+		75B0BF14224FAC4D0007AA54 /* ResultViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewCell.xib; sourceTree = "<group>"; };
+		991E2CC1D33985C86930A382 /* Pods_QRCodeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCodeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +65,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B350508ED981B562E96816 /* Pods_QRCodeSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12136FE639B587DF67B0C388 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991E2CC1D33985C86930A382 /* Pods_QRCodeSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		758B03FF2244CD1400EBDD8C = {
 			isa = PBXGroup;
 			children = (
 				758B040A2244CD1400EBDD8C /* QRCodeSample */,
 				758B04092244CD1400EBDD8C /* Products */,
+				9A049B287F03AF1771E2B24D /* Pods */,
+				12136FE639B587DF67B0C388 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +102,86 @@
 			isa = PBXGroup;
 			children = (
 				758B040B2244CD1400EBDD8C /* AppDelegate.swift */,
-				758B040D2244CD1400EBDD8C /* ViewController.swift */,
 				758B040F2244CD1400EBDD8C /* Main.storyboard */,
+				75B0BF02224F2F500007AA54 /* AdminViewController */,
+				75B0BF09224F322E0007AA54 /* RoomViewController */,
+				75B0BF10224FAC1B0007AA54 /* ResultViewController */,
+				75ABF5502250659700FE951B /* CameraViewController */,
+				75AEC064224DF24500D49949 /* GroupViewController */,
+				75AEC06B224DF42300D49949 /* VoteViewController */,
 				758B04122244CD1600EBDD8C /* Assets.xcassets */,
 				758B04142244CD1600EBDD8C /* LaunchScreen.storyboard */,
 				758B04172244CD1600EBDD8C /* Info.plist */,
+				754BFA03224E590D00252FB2 /* GoogleService-Info.plist */,
 			);
 			path = QRCodeSample;
+			sourceTree = "<group>";
+		};
+		75ABF5502250659700FE951B /* CameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75ABF551225065B600FE951B /* CameraViewController.swift */,
+			);
+			path = CameraViewController;
+			sourceTree = "<group>";
+		};
+		75AEC064224DF24500D49949 /* GroupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75AEC065224DF27000D49949 /* GroupViewController.swift */,
+				75AEC067224DF29700D49949 /* GroupViewCell.swift */,
+				75AEC068224DF29700D49949 /* GroupViewCell.xib */,
+			);
+			path = GroupViewController;
+			sourceTree = "<group>";
+		};
+		75AEC06B224DF42300D49949 /* VoteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75AEC06C224DF44C00D49949 /* VoteViewController.swift */,
+				75AEC06E224DF46800D49949 /* VoteViewCell.swift */,
+				75AEC06F224DF46800D49949 /* VoteViewCell.xib */,
+			);
+			path = VoteViewController;
+			sourceTree = "<group>";
+		};
+		75B0BF02224F2F500007AA54 /* AdminViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75B0BF03224F2F780007AA54 /* AdminViewController.swift */,
+				75B0BF05224F2F890007AA54 /* AdminViewCell.swift */,
+				75B0BF06224F2F890007AA54 /* AdminViewCell.xib */,
+			);
+			path = AdminViewController;
+			sourceTree = "<group>";
+		};
+		75B0BF09224F322E0007AA54 /* RoomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75B0BF0A224F9D260007AA54 /* RoomViewController.swift */,
+				75B0BF0C224F9D370007AA54 /* RoomViewCell.swift */,
+				75B0BF0D224F9D370007AA54 /* RoomViewCell.xib */,
+			);
+			path = RoomViewController;
+			sourceTree = "<group>";
+		};
+		75B0BF10224FAC1B0007AA54 /* ResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75B0BF11224FAC330007AA54 /* ResultViewController.swift */,
+				75B0BF13224FAC4D0007AA54 /* ResultViewCell.swift */,
+				75B0BF14224FAC4D0007AA54 /* ResultViewCell.xib */,
+			);
+			path = ResultViewController;
+			sourceTree = "<group>";
+		};
+		9A049B287F03AF1771E2B24D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D9DBAB556F5F477F2EAE98D /* Pods-QRCodeSample.debug.xcconfig */,
+				3C8DDEA870A4D31BDE779F1B /* Pods-QRCodeSample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 758B041A2244CD1600EBDD8C /* Build configuration list for PBXNativeTarget "QRCodeSample" */;
 			buildPhases = (
+				6BEFA1F927C046B8A44365A0 /* [CP] Check Pods Manifest.lock */,
 				758B04042244CD1400EBDD8C /* Sources */,
 				758B04052244CD1400EBDD8C /* Frameworks */,
 				758B04062244CD1400EBDD8C /* Resources */,
+				1B8394E01AF4853A32649487 /* [CP] Embed Pods Frameworks */,
+				D9461A5B05240FF36021A1E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,21 +245,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B0BF16224FAC4D0007AA54 /* ResultViewCell.xib in Resources */,
 				758B04162244CD1600EBDD8C /* LaunchScreen.storyboard in Resources */,
+				75B0BF0F224F9D370007AA54 /* RoomViewCell.xib in Resources */,
 				758B04132244CD1600EBDD8C /* Assets.xcassets in Resources */,
+				75AEC06A224DF29700D49949 /* GroupViewCell.xib in Resources */,
+				75AEC071224DF46800D49949 /* VoteViewCell.xib in Resources */,
 				758B04112244CD1400EBDD8C /* Main.storyboard in Resources */,
+				75B0BF08224F2F890007AA54 /* AdminViewCell.xib in Resources */,
+				754BFA04224E590D00252FB2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B8394E01AF4853A32649487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QRCodeSample/Pods-QRCodeSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRCodeSample/Pods-QRCodeSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEFA1F927C046B8A44365A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRCodeSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9461A5B05240FF36021A1E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRCodeSample/Pods-QRCodeSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		758B04042244CD1400EBDD8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758B040E2244CD1400EBDD8C /* ViewController.swift in Sources */,
+				75B0BF04224F2F780007AA54 /* AdminViewController.swift in Sources */,
+				75AEC070224DF46800D49949 /* VoteViewCell.swift in Sources */,
+				75B0BF0E224F9D370007AA54 /* RoomViewCell.swift in Sources */,
+				75AEC06D224DF44C00D49949 /* VoteViewController.swift in Sources */,
+				75AEC066224DF27000D49949 /* GroupViewController.swift in Sources */,
+				75ABF552225065B600FE951B /* CameraViewController.swift in Sources */,
+				75B0BF12224FAC330007AA54 /* ResultViewController.swift in Sources */,
+				75B0BF07224F2F890007AA54 /* AdminViewCell.swift in Sources */,
 				758B040C2244CD1400EBDD8C /* AppDelegate.swift in Sources */,
+				75AEC069224DF29700D49949 /* GroupViewCell.swift in Sources */,
+				75B0BF0B224F9D260007AA54 /* RoomViewController.swift in Sources */,
+				75B0BF15224FAC4D0007AA54 /* ResultViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +477,13 @@
 		};
 		758B041B2244CD1600EBDD8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9DBAB556F5F477F2EAE98D /* Pods-QRCodeSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWW3CV2X72;
 				INFOPLIST_FILE = QRCodeSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +497,13 @@
 		};
 		758B041C2244CD1600EBDD8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8DDEA870A4D31BDE779F1B /* Pods-QRCodeSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWW3CV2X72;
 				INFOPLIST_FILE = QRCodeSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

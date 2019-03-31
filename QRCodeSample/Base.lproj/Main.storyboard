@@ -1,24 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e6C-Hv-Bow">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Admin View Controller-->
+        <scene sceneID="MGC-Ly-9AH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="3Fh-5L-taU" customClass="AdminViewController" customModule="QRCodeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g7Y-uE-BnN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KiQ-4X-a0B">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="3Fh-5L-taU" id="HhA-BJ-pIu"/>
+                            <outlet property="delegate" destination="3Fh-5L-taU" id="plH-cj-yCV"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="F6q-MI-Wrd"/>
+                    <connections>
+                        <outlet property="flowLayout" destination="KiQ-4X-a0B" id="WST-8G-cRp"/>
+                        <segue destination="yNa-gy-QQM" kind="show" identifier="toRoomView" id="yh2-xi-d00"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUo-Ys-n3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2058.4000000000001" y="-133.5832083958021"/>
+        </scene>
+        <!--Room-->
+        <scene sceneID="Fq7-0T-2Dr">
+            <objects>
+                <tableViewController id="yNa-gy-QQM" customClass="RoomViewController" customModule="QRCodeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Ng-Pe-MdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="yNa-gy-QQM" id="ytc-ns-90d"/>
+                            <outlet property="delegate" destination="yNa-gy-QQM" id="qmX-Dw-ye7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Room" id="mwg-NX-LWA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="IEz-rF-69X">
+                            <connections>
+                                <action selector="addRoom:" destination="yNa-gy-QQM" id="bx6-8R-bgX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addRoomButton" destination="IEz-rF-69X" id="2tK-s9-jkw"/>
+                        <segue destination="ggZ-DY-AUo" kind="presentation" identifier="toResultView" id="HY2-7D-mwI"/>
+                        <segue destination="JkG-MR-flb" kind="presentation" identifier="toCameraView" id="76K-3x-Uwe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MhE-9e-b7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1072.8" y="-132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UPx-4a-PIW">
+            <objects>
+                <navigationController id="kbH-hi-Jw4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Wx-wF-5CD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ULj-Jw-bFY" kind="relationship" relationship="rootViewController" id="WCt-DA-0ys"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgk-jW-UDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="-133"/>
+        </scene>
+        <!--結果-->
+        <scene sceneID="AM3-Dk-sO1">
+            <objects>
+                <tableViewController id="fK7-HC-JWj" customClass="ResultViewController" customModule="QRCodeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="04J-IZ-lwG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="fK7-HC-JWj" id="0ZJ-YD-lDo"/>
+                            <outlet property="delegate" destination="fK7-HC-JWj" id="0cs-WC-oxs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="結果" id="qAF-Gi-8Ae"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5T-Vv-hME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="635"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="w9k-Xy-7kD">
+            <objects>
+                <viewController id="JkG-MR-flb" customClass="CameraViewController" customModule="QRCodeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pom-Br-cvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hg9-we-Zgz">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hg9-we-Zgz" secondAttribute="height" multiplier="1:1" id="IHA-QM-lan"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="このQRコードは使えません" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-rT-Cfi">
+                                <rect key="frame" x="80.5" y="109" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hg9-we-Zgz" firstAttribute="centerY" secondItem="Pom-Br-cvm" secondAttribute="centerY" id="9gf-Pv-o7u"/>
+                            <constraint firstItem="hg9-we-Zgz" firstAttribute="leading" secondItem="Wad-XF-7vY" secondAttribute="leading" id="Ro5-vL-ZL1"/>
+                            <constraint firstItem="Wad-XF-7vY" firstAttribute="trailing" secondItem="hg9-we-Zgz" secondAttribute="trailing" id="gop-hv-VUp"/>
+                            <constraint firstItem="9VI-rT-Cfi" firstAttribute="centerX" secondItem="Pom-Br-cvm" secondAttribute="centerX" id="xrQ-Z1-obb"/>
+                            <constraint firstItem="hg9-we-Zgz" firstAttribute="top" secondItem="9VI-rT-Cfi" secondAttribute="bottom" constant="16" id="yse-GR-zmP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wad-XF-7vY"/>
+                    </view>
+                    <connections>
+                        <outlet property="captureView" destination="hg9-we-Zgz" id="Qf5-gv-b1C"/>
+                        <outlet property="warningLabel" destination="9VI-rT-Cfi" id="ASy-7M-QCc"/>
+                        <segue destination="kbH-hi-Jw4" kind="presentation" identifier="toGroupView" id="0zu-6R-nzu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTw-tj-8VQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="-134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2TP-vM-f0R">
+            <objects>
+                <navigationController id="ggZ-DY-AUo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Zo-5S-Im6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fK7-HC-JWj" kind="relationship" relationship="rootViewController" id="kZs-hd-0p2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMp-xs-shi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1061" y="635"/>
+        </scene>
+        <!--グループ-->
+        <scene sceneID="Wvh-Mb-YA3">
+            <objects>
+                <collectionViewController id="ULj-Jw-bFY" customClass="GroupViewController" customModule="QRCodeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="ylx-vp-Swx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Akg-iN-h7Q">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="ULj-Jw-bFY" id="9zy-1t-sYB"/>
+                            <outlet property="delegate" destination="ULj-Jw-bFY" id="7uC-4i-0Vy"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="グループ" id="KxS-ZU-lVu">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="DKE-ao-9bg"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="投票する" id="Z2X-LI-CrY">
+                            <connections>
+                                <action selector="vote:" destination="ULj-Jw-bFY" id="WNr-DK-dRP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="flowLayout" destination="Akg-iN-h7Q" id="824-1P-d0G"/>
+                        <outlet property="voteButton" destination="Z2X-LI-CrY" id="lCe-fl-JeD"/>
+                        <segue destination="xTy-UX-U0M" kind="show" identifier="toVoteView" id="r6V-dV-K5z"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lai-sO-3gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="-134"/>
+        </scene>
+        <!--Vote View Controller-->
+        <scene sceneID="IuO-0A-rau">
+            <objects>
+                <tableViewController id="xTy-UX-U0M" customClass="VoteViewController" customModule="QRCodeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NSQ-gU-xSk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="xTy-UX-U0M" id="k90-g5-ea8"/>
+                            <outlet property="delegate" destination="xTy-UX-U0M" id="4Ua-so-NqW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="e9f-WV-tUr">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="完了" id="1AE-Ih-C5S">
+                            <connections>
+                                <action selector="done:" destination="xTy-UX-U0M" id="9oI-I3-Jzs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="1AE-Ih-C5S" id="khK-hg-5RH"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLv-9u-mvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2687" y="-134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sOu-5l-7hi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e6C-Hv-Bow" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7NQ-tF-DRv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Fh-5L-taU" kind="relationship" relationship="rootViewController" id="Haz-3y-Vxa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcT-fG-gJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2999.1999999999998" y="-134.48275862068968"/>
         </scene>
     </scenes>
 </document>
