@@ -40,7 +40,8 @@ class CameraViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        Database.database().reference().child("qr").observeSingleEvent(of: .value) { (snapshot) in
+        let room = UserDefaults.standard.object(forKey: "Room") as! String
+        Database.database().reference().child("qr").child(room).observeSingleEvent(of: .value) { (snapshot) in
             guard let values = snapshot.value as? [String:Bool] else { return }
             self.certs = values
         }
@@ -110,6 +111,7 @@ extension CameraViewController: AVCaptureMetadataOutputObjectsDelegate {
     }
     
     private func setStatus(_ value: String) {
-        Database.database().reference().child("qr").updateChildValues([value:false])
+        let room = UserDefaults.standard.object(forKey: "Room") as! String
+        Database.database().reference().child("qr").child(room).updateChildValues([value:false])
     }
 }

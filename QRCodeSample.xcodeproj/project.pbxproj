@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		754BFA04224E590D00252FB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754BFA03224E590D00252FB2 /* GoogleService-Info.plist */; };
 		758B040C2244CD1400EBDD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B040B2244CD1400EBDD8C /* AppDelegate.swift */; };
 		758B04112244CD1400EBDD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758B040F2244CD1400EBDD8C /* Main.storyboard */; };
 		758B04132244CD1600EBDD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758B04122244CD1600EBDD8C /* Assets.xcassets */; };
 		758B04162244CD1600EBDD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758B04142244CD1600EBDD8C /* LaunchScreen.storyboard */; };
+		75A3D7592256405700359A82 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A3D7582256405700359A82 /* PDFViewController.swift */; };
+		75A3D75B2256419300359A82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A3D75A2256419300359A82 /* GoogleService-Info.plist */; };
+		75A3D75F22564D8700359A82 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 75A3D75E22564D8600359A82 /* Sample.pdf */; };
 		75ABF552225065B600FE951B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABF551225065B600FE951B /* CameraViewController.swift */; };
 		75AEC066224DF27000D49949 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC065224DF27000D49949 /* GroupViewController.swift */; };
 		75AEC069224DF29700D49949 /* GroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC067224DF29700D49949 /* GroupViewCell.swift */; };
@@ -34,13 +36,15 @@
 /* Begin PBXFileReference section */
 		3C8DDEA870A4D31BDE779F1B /* Pods-QRCodeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRCodeSample/Pods-QRCodeSample.release.xcconfig"; sourceTree = "<group>"; };
 		3D9DBAB556F5F477F2EAE98D /* Pods-QRCodeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRCodeSample/Pods-QRCodeSample.debug.xcconfig"; sourceTree = "<group>"; };
-		754BFA03224E590D00252FB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/Download/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		758B04082244CD1400EBDD8C /* QRCodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758B040B2244CD1400EBDD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		758B04102244CD1400EBDD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		758B04122244CD1600EBDD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		758B04152244CD1600EBDD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		758B04172244CD1600EBDD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A3D7582256405700359A82 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		75A3D75A2256419300359A82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		75A3D75E22564D8600359A82 /* Sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample.pdf; sourceTree = SOURCE_ROOT; };
 		75ABF551225065B600FE951B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		75AEC065224DF27000D49949 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		75AEC067224DF29700D49949 /* GroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewCell.swift; sourceTree = "<group>"; };
@@ -109,12 +113,22 @@
 				75ABF5502250659700FE951B /* CameraViewController */,
 				75AEC064224DF24500D49949 /* GroupViewController */,
 				75AEC06B224DF42300D49949 /* VoteViewController */,
+				75A3D75722563FD300359A82 /* PDFViewController */,
 				758B04122244CD1600EBDD8C /* Assets.xcassets */,
 				758B04142244CD1600EBDD8C /* LaunchScreen.storyboard */,
 				758B04172244CD1600EBDD8C /* Info.plist */,
-				754BFA03224E590D00252FB2 /* GoogleService-Info.plist */,
+				75A3D75A2256419300359A82 /* GoogleService-Info.plist */,
+				75A3D75E22564D8600359A82 /* Sample.pdf */,
 			);
 			path = QRCodeSample;
+			sourceTree = "<group>";
+		};
+		75A3D75722563FD300359A82 /* PDFViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75A3D7582256405700359A82 /* PDFViewController.swift */,
+			);
+			path = PDFViewController;
 			sourceTree = "<group>";
 		};
 		75ABF5502250659700FE951B /* CameraViewController */ = {
@@ -247,13 +261,14 @@
 			files = (
 				75B0BF16224FAC4D0007AA54 /* ResultViewCell.xib in Resources */,
 				758B04162244CD1600EBDD8C /* LaunchScreen.storyboard in Resources */,
+				75A3D75B2256419300359A82 /* GoogleService-Info.plist in Resources */,
 				75B0BF0F224F9D370007AA54 /* RoomViewCell.xib in Resources */,
 				758B04132244CD1600EBDD8C /* Assets.xcassets in Resources */,
 				75AEC06A224DF29700D49949 /* GroupViewCell.xib in Resources */,
 				75AEC071224DF46800D49949 /* VoteViewCell.xib in Resources */,
 				758B04112244CD1400EBDD8C /* Main.storyboard in Resources */,
+				75A3D75F22564D8700359A82 /* Sample.pdf in Resources */,
 				75B0BF08224F2F890007AA54 /* AdminViewCell.xib in Resources */,
-				754BFA04224E590D00252FB2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +340,7 @@
 				75B0BF04224F2F780007AA54 /* AdminViewController.swift in Sources */,
 				75AEC070224DF46800D49949 /* VoteViewCell.swift in Sources */,
 				75B0BF0E224F9D370007AA54 /* RoomViewCell.swift in Sources */,
+				75A3D7592256405700359A82 /* PDFViewController.swift in Sources */,
 				75AEC06D224DF44C00D49949 /* VoteViewController.swift in Sources */,
 				75AEC066224DF27000D49949 /* GroupViewController.swift in Sources */,
 				75ABF552225065B600FE951B /* CameraViewController.swift in Sources */,
