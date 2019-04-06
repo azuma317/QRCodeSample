@@ -26,7 +26,7 @@ class RoomViewController: UITableViewController {
         
         ref = Database.database().reference()
         ref.child("rooms").observe(.value) { (snapshot) in
-            let values = snapshot.value as! [String:Bool]
+            guard let values = snapshot.value as? [String:Bool] else { return }
             self.rooms = [String](values.keys)
             self.tableView.reloadData()
         }
