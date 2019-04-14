@@ -31,7 +31,7 @@ class VoteViewController: UITableViewController {
         ref = Database.database().reference()
         ref.child("users").child(groupName).observeSingleEvent(of: .value) { (snapshot) in
             let values = snapshot.value as! [String:Bool]
-            self.names = [String](values.keys)
+            self.names = [String](values.keys).sorted()
             self.tableView.reloadData()
         }
     }

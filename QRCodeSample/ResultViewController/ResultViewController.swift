@@ -28,6 +28,8 @@ class ResultViewController: UITableViewController {
         ref.child("vote").child(room).observe(.value) { (snapshot) in
             let values = snapshot.value as? [String:[String:[String:Bool]]]
             self.results = values ?? [:]
+            
+            self.navigationItem.title = "結果(\((values?["A"]?.count ?? 0) / 2)人中)"
             self.tableView.reloadData()
         }
     }
