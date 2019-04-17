@@ -29,7 +29,13 @@ class ResultViewController: UITableViewController {
             let values = snapshot.value as? [String:[String:[String:Bool]]]
             self.results = values ?? [:]
             
-            self.navigationItem.title = "結果(\((values?["A"]?.count ?? 0) / 2)人中)"
+            var count = 0
+            if let results = self.results["A"] {
+                for value in results.values {
+                    count += value.count
+                }
+            }
+            self.navigationItem.title = "結果(\(count/2)人中)"
             self.tableView.reloadData()
         }
     }
